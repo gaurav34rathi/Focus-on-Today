@@ -1,0 +1,315 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background:#48A30012;
+  margin: 0;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    font-size: 64px;
+    color: #48A300;
+}
+
+h1 span{
+    color: #61481C;
+}
+
+main{
+  padding: 0 16px 32px;
+}
+.container{
+    max-width: 660px;
+    background-color: #FBFBFB;
+    margin:0 auto;
+    border-radius: 15px;
+    padding: 32px 42px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+h2{
+    font-size: 32px;
+  }
+
+.sun-rotating{
+  animation: rotation 20s infinite linear;
+  margin-left: 16px;
+  vertical-align: middle;
+}
+.sun-static{
+  vertical-align: middle;
+  position: relative;
+  right: 31px;
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.progress-label{
+  font-weight: 400;
+  font-size: 21px;
+  color: #858585;
+  margin-bottom: 18px;
+}
+
+.progress-bar{
+  height: 30px;
+  background-color: #48A3001A;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.progress-value{
+  height: 100%;
+  width: 0;
+  background-color: #48A300;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #EEFFE0;
+  /* vertical-align: middle; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.2s ease-in-out;
+
+}
+
+.progress-value span{
+  padding-left: 20px;
+  min-width: max-content;
+}
+
+.error-label{
+  color: #FF5151;
+  font-weight: 400;
+  font-size: 14px;
+  margin-block: 0px;
+  display: none;
+  position: absolute;
+  top: 45px;
+}
+
+.error-show .error-label{
+  display: block;
+}
+
+.goal-container{
+  border: 1px solid #0000001A;
+  border-radius: 17px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  background-color:#FFFFFF;
+  margin-bottom: 42px;
+}
+
+.custom-checkbox{
+  width: 24px;
+  height: 24px;
+  border: 2px solid #61481C4D;
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-icon{
+  display: none;
+}
+
+.checkbox-input{
+  font-size: 16px;
+  border: none;
+  padding-left: 22px;
+  font-family: inherit;
+  outline: none;
+  font-weight: 500;
+  /* align-self: stretch; */
+  height: 100%;
+  width: 100%;
+  /* flex-grow: 1; */
+  /* background-color: pink; */
+}
+
+.goal-container ::placeholder{
+  color: #D9D9D9;
+  font-family: inherit;
+  /* font-weight: 100; */ 
+}
+
+.quote{
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.made-with{
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  color: #858585;
+  margin-top: 64px;
+}
+
+.completed .custom-checkbox{
+  background-color: #48A300;
+  border-color: #48A300;
+}
+
+.completed .check-icon{
+    display: block;
+}
+
+.completed .checkbox-input{
+  color: #48A300;
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px){
+  h1{
+    font-size: 32px;
+  }
+  .container{
+    padding: 16px 32px;
+  }
+  .goal-container{
+    height: 64px;
+    margin-bottom: 24px;
+    border-radius: 14px;
+  }
+  .custom-checkbox{
+    height: 20px;
+    width: 20px;
+  }
+  .made-with{
+    margin-top: 32px;
+  }
+  .progress-bar{
+    height: 24px;
+  }
+}
